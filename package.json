@@ -2,7 +2,9 @@
   "name": "hello",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://yandanarendra.github.io/hello/",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4"
@@ -11,6 +13,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "ws": "3.3.2"
   }
 }
